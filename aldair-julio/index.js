@@ -165,8 +165,8 @@ const biggerThanAHundred = (array) => {
   for(item of array){
     prices.push(item.price);
   }
-  let lower = Math.min(... prices);
-  if(lower > 49){
+  let lower = Math.min(...prices);
+  if(lower > 100){
     return true;
   } else {
     return false;
