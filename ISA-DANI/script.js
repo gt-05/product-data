@@ -101,3 +101,11 @@ function aplicarDesconto(products) {
 }
 let produtosDescontado = aplicarDesconto(products);
 console.log(produtosDescontado);
+
+function filtrarPorCategoria(produtos, categoria) {
+    return products.filter(produto => produto.category === categoria);
+}
+
+const produtosFiltrados = filtrarPorCategoria("Fone de Ouvido Sem Fio", "Eletrônicos");
+console.log(produtosFiltrados);
+
