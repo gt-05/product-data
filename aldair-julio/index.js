@@ -80,4 +80,16 @@ let produtos = [
       category: "Livros",
     },
   ];
+
+const filterByCategory = (array, category) => {
+    let filteredArray = []
+    for(item of array){
+        if(item.category === category){
+            filteredArray.push(item)
+        }
+    }
+    return filteredArray
+}
+
+console.table(filterByCategory(produtos, 'Eletrônicos'))
   
