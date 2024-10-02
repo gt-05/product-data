@@ -89,7 +89,13 @@ function aplicarDesconto(products) {
         let precoFinal = product.price - descontoProduto;
 
         return {
-            ...product
+            id: product.id,
+            name: product.name,
+            category: product.category,
+            price: product.price,
+            discount: product.discount,
+            discountPrice: precoFinal.toFixed(2),
+
         }
     })
 }
