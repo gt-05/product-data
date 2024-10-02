@@ -1,83 +1,130 @@
 let produtos = [
-    {
+  {
       id: 1,
-      name: "Camiseta",
-      price: 50.0,
-      discountPrice: 40.0,
-      discount: 20,
-      category: "Vestuário",
-    },
-    {
+      name: "Camiseta Básica",
+      price: 29.99,
+      discountPrice: 0.00,
+      discount: 10.0,
+      category: "Vestuário"
+  },
+  {
       id: 2,
-      name: "Calça Jeans",
-      price: 120.0,
-      discountPrice: 90.0,
-      discount: 25,
-      category: "Vestuário",
-    },
-    {
-      id: 3,
       name: "Tênis Esportivo",
-      price: 200.0,
-      discountPrice: 150.0,
-      discount: 25,
-      category: "Calçados",
-    },
-    {
+      price: 199.99,
+      discountPrice: 0.00,
+      discount: 15.0,
+      category: "Calçados"
+  },
+  {
+      id: 3,
+      name: "Relógio de Pulso",
+      price: 499.99,
+      discountPrice: 0.00,
+      discount: 20.0,
+      category: "Acessórios"
+  },
+  {
       id: 4,
-      name: "Relógio",
-      price: 300.0,
-      discountPrice: 240.0,
-      discount: 20,
-      category: "Acessórios",
-    },
-    {
+      name: "Mochila Escolar",
+      price: 89.99,
+      discountPrice: 0.00,
+      discount: 5.0,
+      category: "Acessórios"
+  },
+  {
       id: 5,
       name: "Smartphone",
-      price: 1500.0,
-      discountPrice: 1300.0,
-      discount: 13.33,
-      category: "Eletrônicos",
-    },
-    {
+      price: 2999.99,
+      discountPrice: 0.00,
+      discount: 25.0,
+      category: "Eletrônicos"
+  },
+  {
       id: 6,
-      name: "Fone de Ouvido",
-      price: 150.0,
-      discountPrice: 120.0,
-      discount: 20,
-      category: "Eletrônicos",
-    },
-    {
+      name: "Fone de Ouvido Sem Fio",
+      price: 199.99,
+      discountPrice: 0.00,
+      discount: 30.0,
+      category: "Eletrônicos"
+  },
+  {
       id: 7,
       name: "Cadeira Gamer",
-      price: 600.0,
-      discountPrice: 480.0,
-      discount: 20,
-      category: "Mobiliário",
-    },
-    {
+      price: 799.99,
+      discountPrice: 0.00,
+      discount: 12.0,
+      category: "Móveis"
+  },
+  {
       id: 8,
-      name: "Mesa de Estudo",
-      price: 400.0,
-      discountPrice: 320.0,
-      discount: 20,
-      category: "Mobiliário",
-    },
-    {
+      name: "Cafeteira Elétrica",
+      price: 349.99,
+      discountPrice: 0.00,
+      discount: 18.0,
+      category: "Eletrodomésticos"
+  },
+  {
       id: 9,
-      name: "Câmera Digital",
-      price: 1000.0,
-      discountPrice: 800.0,
-      discount: 20,
-      category: "Fotografia",
-    },
-    {
+      name: "Notebook Gamer",
+      price: 4999.99,
+      discountPrice: 0.00,
+      discount: 10.0,
+      category: "Eletrônicos"
+  },
+  {
       id: 10,
-      name: "Livro de Programação",
-      price: 60.0,
-      discountPrice: 45.0,
-      discount: 25,
-      category: "Livros",
-    },
-  ];
+      name: "Livro de Receitas",
+      price: 39.99,
+      discountPrice: 0.00,
+      discount: 8.0,
+      category: "Livros"
+  }
+];
+
+// Função de Aplicar o Desconto 
   
+  function aplicarDesconto(produtos){
+    return produtos.map(produto => {
+      produto.discountPrice = produto.price - (produto.price * produto.discount/100);
+      return produto;
+
+
+    })
+  }
+
+// Função de Filtrar por categoria
+
+  function filtrarPorCategoria(produtos, categoria){
+    const produtosFiltrados = [];
+    for (let i = 0; i < produtos.length; i++){
+      if (produtos[i].category === categoria) {
+        produtosFiltrados.push(produtos[i]);
+      }
+    }
+    return produtosFiltrados;
+  }
+
+// Função de Filtrar por nome
+
+  function filtrarPorTermo(produtos, termo) {
+    const produtosFiltrados = [];
+    for (let i = 0; i < produtos.length; i++){
+      if (produtos[i].name.toLowerCase().includes(termo.toLowerCase())){
+        produtosFiltrados.push(produtos[i]);
+      }
+    }
+    return produtosFiltrados;
+  }
+
+
+// Testanto o Aplicar Desconto;
+
+  console.log(aplicarDesconto(produtos));
+
+// Testanto o Filtrar por Categoria;
+
+  console.log(filtrarPorCategoria(produtos, 'Eletrônicos'));
+
+// Testanto o Filtrar por Nome ou Termo;
+
+  console.log(filtrarPorTermo(produtos, 'Camiseta Básica'));
