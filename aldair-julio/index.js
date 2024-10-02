@@ -51,7 +51,7 @@ let produtos = [
       id: 7,
       name: "Cadeira Gamer",
       price: 600.0,
-      discountPrice: 480.0,
+      discountPrice: 480,
       discount: 20,
       category: "Mobiliário",
     },
@@ -91,5 +91,11 @@ const filterByCategory = (array, category) => {
     return filteredArray
 }
 
-console.table(filterByCategory(produtos, 'Eletrônicos'))
+const totalAmountInStock = (array) => {
+    let totalAmount = 0
+    for(item of array){
+        totalAmount += item.price
+    }
+    return totalAmount
+}
   
