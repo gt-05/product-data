@@ -108,6 +108,18 @@ const totalAmountInStock = (array) => {
   return totalAmount;
 };
 
+const searchByTerm = (array, term) => {
+    let searchResults = []
+    for(item of array){
+        if(item.name.trim().toLowerCase().includes(term)){
+            searchResults.push(item)
+        }
+    }
+    return searchResults
+}
+
+console.table(searchByTerm(produtos, 'livro'))
+
 const discountInStock = (array) => {
   thereIsADiscount = false;
   for (item of array) {
