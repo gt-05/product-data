@@ -1,6 +1,5 @@
-// Array de produtos
-function produtos(){
-    return  [
+let produtos = 
+[
     {
         "id": 1,
         "name": "Camiseta Básica",
@@ -81,5 +80,4 @@ function produtos(){
         "discount": 8.0,
         "category": "Livros"
     }
-];
-}
+]
