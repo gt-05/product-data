@@ -1,5 +1,7 @@
 # product-data
 
+# OBRIGATORIAMENTE TEM QUE SER USA OS LOOPS QUE VIMOS EM SALA COMO FOR, FOR OF, FOR IN OU WHILE
+
 1. Array de produtos (min 10. Dica: Chat GPT)
     - id (int)
     - name
