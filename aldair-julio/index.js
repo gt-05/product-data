@@ -104,4 +104,13 @@ const totalAmountInStock = (array) => {
     }
     return totalAmount
 }
-  
+
+const discountInStock = (array) => {
+    thereIsADiscount = false
+    for(item of array){
+        if(item.discount > 0){
+            thereIsADiscount = true
+        }
+    }
+    return thereIsADiscount
+}
