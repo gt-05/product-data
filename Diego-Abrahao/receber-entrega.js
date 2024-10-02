@@ -1,5 +1,8 @@
-//função que recebe um array de produtos e devolve outro array de produtos com o desconto aplicado
+//função que recebe um array de produtos e devolve outro array de produtos com o desconto aplicado 
 
-function reProduts(products){
-    
+const array = produtos()
+function discountProducts(array) {
+const produtosComDesconto = [];
+return produtosComDesconto;
 }
+console.log(array)

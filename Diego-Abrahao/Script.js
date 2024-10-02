@@ -1,5 +1,6 @@
 // Array de produtos
-const products = [
+function produtos(){
+    return  [
     {
         "id": 1,
         "name": "Camiseta Básica",
@@ -81,3 +82,4 @@ const products = [
         "category": "Livros"
     }
 ];
+}
