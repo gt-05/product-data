@@ -1,83 +1,83 @@
 // Array de produtos
 const products = [
     {
-      id: 1,
-      name: "Smartphone Galaxy S24",
-      price: 7999.99,
-      discountPrice: 6999.99,
-      discount: 12.5,
-      category: "Electronics"
+        "id": 1,
+        "name": "Camiseta Básica",
+        "price": 29.99,
+        "discountPrice": 0.00,
+        "discount": 10.0,
+        "category": "Vestuário"
     },
     {
-      id: 2,
-      name: "Laptop Dell XPS 13",
-      price: 12999.99,
-      discountPrice: 10999.99,
-      discount: 15,
-      category: "Electronics"
+        "id": 2,
+        "name": "Tênis Esportivo",
+        "price": 199.99,
+        "discountPrice": 0.00,
+        "discount": 15.0,
+        "category": "Calçados"
     },
     {
-      id: 3,
-      name: "TV Samsung 55\"",
-      price: 4999.99,
-      discountPrice: 4499.99,
-      discount: 10,
-      category: "Electronics"
+        "id": 3,
+        "name": "Relógio de Pulso",
+        "price": 499.99,
+        "discountPrice": 0.00,
+        "discount": 20.0,
+        "category": "Acessórios"
     },
     {
-      id: 4,
-      name: "Refrigerator LG French Door",
-      price: 3999.99,
-      discountPrice: 3499.99,
-      discount: 12.5,
-      category: "Appliances"
+        "id": 4,
+        "name": "Mochila Escolar",
+        "price": 89.99,
+        "discountPrice": 0.00,
+        "discount": 5.0,
+        "category": "Acessórios"
     },
     {
-      id: 5,
-      name: "Washing Machine Samsung Front Load",
-      price: 2999.99,
-      discountPrice: 2499.99,
-      discount: 16.67,
-      category: "Appliances"
+        "id": 5,
+        "name": "Smartphone",
+        "price": 2999.99,
+        "discountPrice": 0.00,
+        "discount": 25.0,
+        "category": "Eletrônicos"
     },
     {
-      id: 6,
-      name: "Air Conditioner Split Inverter",
-      price: 2499.99,
-      discountPrice: 2199.99,
-      discount: 12,
-      category: "Home Improvement"
+        "id": 6,
+        "name": "Fone de Ouvido Sem Fio",
+        "price": 199.99,
+        "discountPrice": 0.00,
+        "discount": 30.0,
+        "category": "Eletrônicos"
     },
     {
-      id: 7,
-      name: "Kitchen Mixer Braun",
-      price: 499.99,
-      discountPrice: 399.99,
-      discount: 20,
-      category: "Kitchen"
+        "id": 7,
+        "name": "Cadeira Gamer",
+        "price": 799.99,
+        "discountPrice": 0.00,
+        "discount": 12.0,
+        "category": "Móveis"
     },
     {
-      id: 8,
-      name: "Coffee Machine Nespresso",
-      price: 999.99,
-      discountPrice: 899.99,
-      discount: 10,
-      category: "Kitchen"
+        "id": 8,
+        "name": "Cafeteira Elétrica",
+        "price": 349.99,
+        "discountPrice": 0.00,
+        "discount": 18.0,
+        "category": "Eletrodomésticos"
     },
     {
-      id: 9,
-      name: "Bed Queen Size",
-      price: 1999.99,
-      discountPrice: 1799.99,
-      discount: 10,
-      category: "Furniture"
+        "id": 9,
+        "name": "Notebook Gamer",
+        "price": 4999.99,
+        "discountPrice": 0.00,
+        "discount": 10.0,
+        "category": "Eletrônicos"
     },
     {
-      id: 10,
-      name: "Sofa 3-Seater",
-      price: 2999.99,
-      discountPrice: 2499.99,
-      discount: 16.67,
-      category: "Furniture"
+        "id": 10,
+        "name": "Livro de Receitas",
+        "price": 39.99,
+        "discountPrice": 0.00,
+        "discount": 8.0,
+        "category": "Livros"
     }
-  ];
+];
