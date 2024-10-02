@@ -1,5 +1,5 @@
 // Array de produtos
-const products = [
+const produtos = [
     {
         "id": 1,
         "name": "Camiseta Básica",

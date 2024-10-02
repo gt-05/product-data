@@ -88,7 +88,7 @@ const applyDiscont = (array) => {
   }
   return discountedProducts;
 };
-console.table(applyDiscont(produtos));
+// console.table(applyDiscont(produtos));
 
 const filterByCategory = (array, category) => {
   let filteredArray = [];
@@ -118,7 +118,7 @@ const searchByTerm = (array, term) => {
     return searchResults
 }
 
-console.table(searchByTerm(produtos, 'livro'))
+// console.table(searchByTerm(produtos, 'Livro'))
 
 const discountInStock = (array) => {
   thereIsADiscount = false;
@@ -129,3 +129,47 @@ const discountInStock = (array) => {
   }
   return thereIsADiscount;
 };
+
+const compareValues = (array1, array2) => {
+  let itemsDecreasing = []
+  for(price of array2){
+    for(item of array1){
+      if(item.price == price){
+        itemsDecreasing.push(item)
+      }
+    }
+  }
+  return itemsDecreasing
+}
+
+const productOrdered = (array) => {
+  let itemsPrices = []
+
+   for(item of array){
+    itemsPrices.push(item.price)
+   }
+  return itemsPrices.sort(function(a, b){return a - b}).reverse();
+}
+
+let invertedPrices = productOrdered(produtos)
+let invertedItems = compareValues(produtos, invertedPrices)
+
+// console.table(invertedItems);
+
+
+
+// PROTOTIPO
+
+const biggerThanAHundred = (array) => {
+  let prices = [];
+  for(item of array){
+    prices.push(item.price);
+  }
+  let lower = Math.min(... prices);
+  if(lower > 49){
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(biggerThanAHundred(produtos));

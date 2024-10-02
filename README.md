@@ -6,11 +6,14 @@
     - id (int)
     - name
     - Price (float)
+    - discountPrice (float, inicia com 0)
+    - discount (float, porcentagem de desconto)
+    - category
+
+2. Criar função que recebe um array de produtos e devolve outro array de produtos com o desconto aplicado na chave discountPrice. A    chave discount deve ser a porcentagem de desconto usado na chave para encontrar o valor da chave discountPrice
     - discountPrice (float, deve iniciar como 0)
     - discount (float)
     - category
-
-2. Criar função que recebe um array de produtos e devolve outro array de produtos com o desconto aplicado. A chave `discount` deve ser a porcentagem e vai ser usada na chave `price` para definir o valor do `discountPricce`
 
 3. Criar função que recebe uma array de produtos e nome de uma categoria e devolve um outro array com apenas os produtos dessa categoria
 
