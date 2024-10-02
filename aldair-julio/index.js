@@ -154,4 +154,20 @@ const productOrdered = (array) => {
 let invertedPrices = productOrdered(produtos)
 let invertedItems = compareValues(produtos, invertedPrices)
 
-console.table(invertedItems);
+// console.table(invertedItems);
+
+const biggerThanAHundred = (array) => {
+  let prices = [];
+  for(item of array){
+    prices.push(item.price);
+  }
+  console.table(prices)
+  let lower = Math.min(prices)
+  console.log(lower);
+  // if(Math.min(prices) > 49){
+  //   return true;
+  // } else {
+  //   return false;
+  // }
+}
+console.log(biggerThanAHundred(produtos));
