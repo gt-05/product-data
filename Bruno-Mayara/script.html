@@ -6,8 +6,41 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="script.js">
-        
+    <script src="script.js"></script>
+    <script>
+      
+      function aplicarDesconto(produtos) {
+    return produtos.map(produto => {
+        const descontoAplicado = produto.price * (produto.discount / 100);
+        const novoPreco = produto.price - descontoAplicado;
+
+        return {
+            id: produto.id,
+            name: produto.name,
+            price: produto.price,
+            discount: produto.discount,
+            category: produto.category,            
+            discountPrice: novoPreco.toFixed(2)
+        };
+    });
+}
+
+const produtosComDesconto = aplicarDesconto(produtos);
+console.log(produtosComDesconto);
+
+
+
+function recebeCategoria(produtos, category) {
+    return produtos.filter((produtos) => produtos.category === category)
+
+}
+
+
+   
+
     </script>
 </body>
 </html>
+
+
+        
