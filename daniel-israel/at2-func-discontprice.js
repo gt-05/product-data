@@ -16,11 +16,14 @@ function aplicandoDesconto(){
         let precoDisconto = (produtos[index].price * produtos[index].discount) / 100;
         produtos[index].discountPrice = produtos[index].price - precoDisconto.toFixed(2);
     }
-
     console.log(produtos);
+    return produtos;
+
 
 };
 
 aplicandoDesconto();
+
+
 
 
