@@ -90,11 +90,30 @@ function aplicarDesconto(produtos) {
             id: produto.id,
             name: produto.name,
             price: produto.price,
-            discountPrice: novoPreco.toFixed(2), // Arredondando para 2 casas decimais
+            discountPrice: novoPreco.toFixed(2),
             discount: produto.discount,
             category: produto.category
         };
     });
 }
+/*
 const produtosComDesconto = aplicarDesconto(produtos);
 console.log(produtosComDesconto);
+*/
+
+function filtrarPorCategoria(produtos, categoria) {
+    let produtosFiltrados = [];
+
+    for (let produto of produtos) {
+        if (produto.category === categoria) {
+            produtosFiltrados.push(produto);
+        }
+    }
+
+    return produtosFiltrados;
+}
+/*
+let categoriaProcurada = "Acessórios";
+let produtosFiltrados = filtrarPorCategoria(produtos, categoriaProcurada);
+console.log(produtosFiltrados);
+*/
