@@ -1,12 +1,3 @@
-import {aplicarDesconto} from './desconto.js'
-import * as batata from './desconto.js'
-
-
-
-
-//import * as funcs  from './desconto.js';
-//import ArrayDeProdutos from './produtos.js';
-
 const products = [
     {
         "id": 1,
@@ -89,7 +80,3 @@ const products = [
         "category": "Eletrodomésticos"
     }
 ]
-
-let resultado = aplicarDesconto(products);
-console.log(resultado);
-
